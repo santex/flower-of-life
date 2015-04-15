@@ -1,0 +1,71 @@
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+.circle {
+    stroke: grey;
+    stroke-width: 1;
+    fill: none;
+    fill-opacity: 0.1;
+}
+.c0 {
+    fill: red;
+}
+.c1 {
+    fill: green;
+}
+.c2 {
+    fill: blue;
+}
+.c3 {
+    fill: purple;
+}
+.c4 {
+    fill: teal;
+}
+.c51 {
+    fill: yellow;
+}
+.c52 {
+    fill: yellow;
+}
+.c6 {
+    fill: orange;
+}
+.c7 {
+    fill: red;
+}
+.line {
+    stroke: grey;
+    stroke-width: 1;
+}
+polygon {
+    stroke: grey;
+    stroke-width: 1;
+    fill-opacity: 0.2;
+}
+.r {
+    fill: red;
+}
+.g {
+    fill: green;
+}
+.b {
+    fill: blue;
+}
+.y {
+    fill: yellow;
+}
+.m {
+    fill: magenta;
+}
+.c {
+    fill: cyan;
+}

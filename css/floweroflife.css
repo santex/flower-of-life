@@ -1,0 +1,32 @@
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+.circle {
+    stroke: grey;
+    stroke-width: 1;
+    fill: none;
+    fill-opacity: 0.1;
+}
+.center {
+    fill: red;
+}
+.first {
+    fill: green;
+}
+.second {
+    fill: blue;
+}
+.third {
+    fill: purple;
+}
+.fourth {
+    fill: teal;
+}
