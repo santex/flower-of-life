@@ -1,8 +1,9 @@
-var w = 600;
+
+var w = window.innerWidth*0.65;
 var xRange = 5;
 var yRange = 5;
 var iteration = 0;
-var padding = 20;
+var padding = 0;
 
 var xScale = d3.scale.linear()
   .domain([-xRange, xRange])
@@ -40,7 +41,7 @@ function animate() {
   circleSet.push(data.shift());
   render(circleSet);
   if (data.length > 0) {
-    setTimeout(animate, 1000);
+    setTimeout(animate, 200);
   } else {
     getTree();
   }
@@ -48,7 +49,7 @@ function animate() {
 
 function animateTree() {
   render(treeData);
-  setTimeout(getMetatron, 800);
+  setTimeout(getMetatron, 1800);
 }
 
 d3.json("data/flower.json", function(error, json) {
@@ -61,13 +62,13 @@ function getTree() {
   d3.json("data/tree.json", function(error, json) {
     if (error) return console.warn(error);
     treeData = json;
-    setTimeout(animateTree, 1200);
+    setTimeout(animateTree, 2000);
   });
 }
 
 function animateMeta(metaData) {
   renderLines(metaData);
-  setTimeout(getTetrahedra, 1200);
+  setTimeout(getTetrahedra, 2000);
 }
 
 function getMetatron() {
@@ -96,8 +97,8 @@ function getTetrahedra() {
 function animateCube(cubeData) {
   renderCubeFaces(cubeData);
   // animate color of faces
-  setTimeout(cycleCube, 400);
-  setTimeout(getOcto, 2000);
+  setTimeout(cycleCube, 800);
+  //setTimeout(getOcto, 2000);
 }
 
 function getCube() {
@@ -334,8 +335,8 @@ function cycle(){
   y.attr("class", "c");
 
   // repeaet
-  if (iteration < 24) {
-    setTimeout(cycle, 1000);
+  if (iteration < 10) {
+    setTimeout(cycle,200);
     iteration += 1;
   } else {
     iteration = 0;
@@ -381,8 +382,8 @@ function cycleCube(){
   yo.attr("class", "m");
 
   // repeaet
-  if (iteration < 100) {
-    setTimeout(cycleCube, 200);
+  if (iteration < 500) {
+    setTimeout(cycleCube, 25);
     iteration += 1;
   }
 
