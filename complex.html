@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3 Complex Number</title>
+        <script type="text/javascript" src="d3/d3.v3.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"
+              media="screen">
+        
+        <style type="text/css">
+          .axis path,
+          .axis line {
+          fill: none;
+          stroke: grey;
+          shape-rendering: crispEdges;
+          }
+
+          .axis text {
+          font-family: sans-serif;
+          font-size: 11px;
+          }
+
+          .div text {
+          font-family: sans-serif;
+          font-size: 11px;
+          }
+
+          .z0 {
+          stroke: blue;
+          stroke-width: 1;
+          fill: none;
+          }
+          .z1 {
+          stroke: green;
+          stroke-width: 1;
+          fill: none;
+          }
+          .z2 {
+          stroke: purple;
+          stroke-width: 1;
+          fill: none;
+          }
+          .z3 {
+          stroke: red;
+          stroke-width: 1;
+          fill: none;
+          }
+          .unit {
+          stroke: grey;
+          stroke-width: 1;
+          fill: none;
+          }
+
+          .dashed {
+          stroke: grey;
+          stroke-width: 1;
+          stroke-dasharray: 2 2;
+          }
+
+          p.z0 {
+          color: blue;
+          }
+          p.z1 {
+          color: green;
+          }
+          p.z2 {
+          color: purple;
+          }
+          p.z3 {
+          color: red;
+          }
+        </style>
+    </head>
+    <body>
+      <div class="conatiner">
+      <div class="row">
+        <div class="span4">
+          <div id="data" class="hero-unit"></div>
+        </div>
+        <div class="span8" class="hero-unit">
+          <div id="graph"></div>
+        </div>
+      </div>
+      </div>
+      <script type="text/javascript" src="complex.js"></script>
+    </body>
+</html>
